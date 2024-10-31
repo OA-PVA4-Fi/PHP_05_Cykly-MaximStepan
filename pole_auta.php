@@ -17,6 +17,28 @@ $cars = array (
 	array("Land Rover",17,15)
 );
 
+echo'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>';
+
+$prodej=0;
+$sklad=0;
+
+foreach ($cars as $value) {
+	$prodej = $value[1] + $prodej;
+	$sklad = $value[2] + $sklad;
+}
+echo "prodej ", $prodej;
+echo " sklad ", $sklad;
 //reseni
 
 ?>
